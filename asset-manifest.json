@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.1748fb68.css",
-    "main.js": "/static/js/main.5ce16d23.js",
-    "static/js/787.ee23acd9.chunk.js": "/static/js/787.ee23acd9.chunk.js",
-    "static/media/illustrationShare.svg": "/static/media/illustrationShare.9bb540f061ef337cdf88c3e49d9d0840.svg",
-    "static/media/illustrationSearch.svg": "/static/media/illustrationSearch.9daa0205e2e29a91703f59a909b68463.svg",
-    "static/media/illustration.svg": "/static/media/illustration.3d3fb9b083a2e33eb080b216d924b4b0.svg",
-    "static/media/illustrationBookmark.svg": "/static/media/illustrationBookmark.ee5134e7851bc14cab8ea10b23ed9bc6.svg",
-    "static/media/dots.svg": "/static/media/dots.e9ea5e2a44652cfe4d278c1ac4528183.svg",
-    "static/media/logo.svg": "/static/media/logo.993b47e9930efc920b8dbb63bfebf33e.svg",
-    "static/media/chrome.svg": "/static/media/chrome.ca78082b833924c9b37a2619787b94c9.svg",
-    "static/media/firefox.svg": "/static/media/firefox.3f27a7e11ca65eacb59ab8c2bb47ec82.svg",
-    "static/media/twitter.svg": "/static/media/twitter.962a506ce38b23268ae3d90e12c3d7a7.svg",
-    "index.html": "/index.html",
-    "static/media/facebook.svg": "/static/media/facebook.102cd95d765d71f7aec332b56159e83a.svg",
-    "static/media/warn.svg": "/static/media/warn.11ba4aba9060049824dc85c241a76cf6.svg",
-    "static/media/opera.svg": "/static/media/opera.fe7895b1d5d4713acf09be73e0be4a09.svg",
-    "static/media/xMark.svg": "/static/media/xMark.99c2386b9454be1f61a21b7abb69c1bf.svg",
-    "static/media/hamburger.svg": "/static/media/hamburger.8a38534c39fa0f87cf8564f7a83ceda7.svg",
-    "static/media/arrow.svg": "/static/media/arrow.e545e2228c912367af524ffee368648e.svg",
-    "main.1748fb68.css.map": "/static/css/main.1748fb68.css.map",
-    "main.5ce16d23.js.map": "/static/js/main.5ce16d23.js.map",
-    "787.ee23acd9.chunk.js.map": "/static/js/787.ee23acd9.chunk.js.map"
+    "main.css": "/confilogi-task/static/css/main.1748fb68.css",
+    "main.js": "/confilogi-task/static/js/main.20c8d816.js",
+    "static/js/787.ee23acd9.chunk.js": "/confilogi-task/static/js/787.ee23acd9.chunk.js",
+    "static/media/illustrationShare.svg": "/confilogi-task/static/media/illustrationShare.9bb540f061ef337cdf88c3e49d9d0840.svg",
+    "static/media/illustrationSearch.svg": "/confilogi-task/static/media/illustrationSearch.9daa0205e2e29a91703f59a909b68463.svg",
+    "static/media/illustration.svg": "/confilogi-task/static/media/illustration.3d3fb9b083a2e33eb080b216d924b4b0.svg",
+    "static/media/illustrationBookmark.svg": "/confilogi-task/static/media/illustrationBookmark.ee5134e7851bc14cab8ea10b23ed9bc6.svg",
+    "static/media/dots.svg": "/confilogi-task/static/media/dots.e9ea5e2a44652cfe4d278c1ac4528183.svg",
+    "static/media/logo.svg": "/confilogi-task/static/media/logo.993b47e9930efc920b8dbb63bfebf33e.svg",
+    "static/media/chrome.svg": "/confilogi-task/static/media/chrome.ca78082b833924c9b37a2619787b94c9.svg",
+    "static/media/firefox.svg": "/confilogi-task/static/media/firefox.3f27a7e11ca65eacb59ab8c2bb47ec82.svg",
+    "static/media/twitter.svg": "/confilogi-task/static/media/twitter.962a506ce38b23268ae3d90e12c3d7a7.svg",
+    "index.html": "/confilogi-task/index.html",
+    "static/media/facebook.svg": "/confilogi-task/static/media/facebook.102cd95d765d71f7aec332b56159e83a.svg",
+    "static/media/warn.svg": "/confilogi-task/static/media/warn.11ba4aba9060049824dc85c241a76cf6.svg",
+    "static/media/opera.svg": "/confilogi-task/static/media/opera.fe7895b1d5d4713acf09be73e0be4a09.svg",
+    "static/media/xMark.svg": "/confilogi-task/static/media/xMark.99c2386b9454be1f61a21b7abb69c1bf.svg",
+    "static/media/hamburger.svg": "/confilogi-task/static/media/hamburger.8a38534c39fa0f87cf8564f7a83ceda7.svg",
+    "static/media/arrow.svg": "/confilogi-task/static/media/arrow.e545e2228c912367af524ffee368648e.svg",
+    "main.1748fb68.css.map": "/confilogi-task/static/css/main.1748fb68.css.map",
+    "main.20c8d816.js.map": "/confilogi-task/static/js/main.20c8d816.js.map",
+    "787.ee23acd9.chunk.js.map": "/confilogi-task/static/js/787.ee23acd9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1748fb68.css",
-    "static/js/main.5ce16d23.js"
+    "static/js/main.20c8d816.js"
   ]
 }
