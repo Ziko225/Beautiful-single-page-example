@@ -1,0 +1,71 @@
+@import "../../theme";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 110px;
+
+    @media (max-width: $desktopWidth) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .header__content {
+        max-width: 482px;
+
+        .content__text {
+            margin-bottom: 32px;
+        }
+
+        .content__buttons {
+            display: flex;
+            column-gap: 16px;
+
+            @media (max-width: $desktopWidth) {
+                justify-content: center;
+            }
+
+            @media (max-width: $mobileMaxWidth) {
+                column-gap: 12px;
+            }
+        }
+    }
+
+    .header__illustration {
+        margin-right: -10%;
+
+        @media (max-width: $desktopWidth) {
+            margin: 0;
+            width: 100%;
+        }
+
+        .illustration__ico {
+            width: 100%;
+            margin: auto;
+            max-width: 500px;
+            height: auto;
+
+            @media (max-width: $mobileMaxWidth) {
+                font-size: 23px;
+                max-width: 400px;
+            }
+        }
+    }
+
+    .header__rectangle {
+        margin-top: -320px;
+
+        @media (max-width: $desktopWidth) {
+            margin-top: -250px;
+        }
+
+        @media (max-width: $mobileMaxWidth) {
+            margin-top: -160px;
+        }
+    }
+}

@@ -1,10 +1,10 @@
 import Extensions from "./features/Extensions";
 import Features from "./features/Features";
 import Footer from "./features/Footer";
-import Form from "./features/Form";
 import Header from "./features/Header";
 import Navigation from "./features/Navigation";
 import Questions from "./features/Questions";
+import "./styles.scss";
 
 function App() {
     return (
@@ -15,7 +15,6 @@ function App() {
                 <Features />
                 <Extensions />
                 <Questions />
-                <Form />
             </main>
             <Footer />
         </>

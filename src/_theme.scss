@@ -1,8 +1,12 @@
 $primaryBackgroundColor: hsl(231, 69%, 60%);
-$secondaryBackgroundColor: hsl(229, 31%, 21%);
+$primaryTextColor: hsl(229, 31%, 21%);
 $activeColor: hsl(0, 94%, 66%);
-
 $secondaryTextColor: hsl(229, 8%, 60%);
+$lightBackgroundColor: rgb(247, 247, 247);
+$white: #fff;
 
-$mobileWidth: "375px";
-$desktopWidth: "1440px";
+$lightShadow: 0px 5px 8px hsla(229, 31%, 21%, 0.17);
+
+$mobileWidth: 375px;
+$mobileMaxWidth: 768px;
+$desktopWidth: 1440px;

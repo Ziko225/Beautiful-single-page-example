@@ -1,10 +1,10 @@
 import "./styles.scss";
 
-const Button = ({ theme }) => {
+const Button = ({ theme, children, className }) => {
     return (
-        <div>
-
-        </div>
+        <button className={`button button--${theme} ${className}`}>
+            {children}
+        </button>
     );
 };
 

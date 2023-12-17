@@ -1,0 +1,55 @@
+@import "../../theme";
+
+.topSection {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    margin-top: 48px;
+    padding: 0 20px;
+
+    @media (max-width: $mobileMaxWidth) {
+        margin-top: 34px;
+    }
+
+    .topSection__logo {
+        margin-right: auto;
+    }
+
+    .topSection__hamburgerButton {
+        display: none;
+        background: none;
+        border: none;
+
+        @media (max-width: $mobileMaxWidth) {
+            display: block;
+        }
+    }
+
+    .topSection__navigation {
+        @media (max-width: $mobileMaxWidth) {
+            display: none;
+        }
+
+        .navigation__link {
+            margin-right: 45px;
+        }
+
+        .navigation__link--primary {
+            background-color: $activeColor;
+            color: $white;
+            padding: 11px 32px;
+            border-radius: 6px;
+            border: 2px solid $activeColor;
+            box-shadow: $lightShadow;
+            transition: 100ms;
+            margin-right: 0;
+        }
+
+        .navigation__link--primary:hover {
+            background: none;
+            color: $activeColor
+        }
+    }
+}

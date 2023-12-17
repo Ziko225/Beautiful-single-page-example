@@ -1,0 +1,19 @@
+@import "../../theme";
+
+.link {
+    font-size: 13px;
+    letter-spacing: 1.45px;
+    color: $white;
+
+    @media (max-width: $desktopWidth) {
+        font-size: 12px;
+    }
+}
+
+.link:hover {
+    color: $activeColor;
+}
+
+.link--dark {
+    color: $primaryTextColor;
+}

@@ -1,0 +1,54 @@
+@import "../../../theme";
+
+.contentBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: $desktopWidth) {
+        flex-direction: column;
+    }
+
+    .contentBlock__Illustration {
+        @media (max-width: $mobileMaxWidth) {
+            max-width: 400px;
+        }
+
+        .Illustration__ico {
+            width: 100%;
+            max-width: 536px;
+            height: auto;
+        }
+
+        .Illustration__rectangle {
+            margin-top: -270px;
+
+            @media (max-width: $desktopWidth) {
+                margin-top: -240px;
+            }
+
+            @media (max-width: $mobileMaxWidth) {
+                margin-top: -150px;
+            }
+
+            @media (max-width: $mobileWidth) {
+                margin-top: -140px;
+            }
+        }
+    }
+
+    .contentBlock__content {
+        .content__information {
+            margin-bottom: 38px;
+        }
+
+        @media (max-width: $desktopWidth) {
+            margin-top: 65px;
+
+            .content__button {
+                display: none;
+            }
+        }
+    }
+}

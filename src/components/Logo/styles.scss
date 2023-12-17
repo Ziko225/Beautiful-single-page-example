@@ -1,0 +1,13 @@
+@import "../../theme";
+
+.logo--dark {
+    .logotext {
+        color: $white;
+    }
+}
+
+.logo--white {
+    .logotext {
+        color: $primaryTextColor;
+    }
+}

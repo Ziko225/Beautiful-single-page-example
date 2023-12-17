@@ -1,0 +1,134 @@
+@import "../../../theme";
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primaryBackgroundColor;
+    color: $white;
+
+    @media (max-width: $mobileMaxWidth) {
+        padding: 0 35px;
+    }
+
+    @media (max-width: $mobileWidth) {
+        padding: 0 20px;
+    }
+
+    .formSection__subTitle {
+        margin-top: 70px;
+        font-size: 13px;
+        letter-spacing: 5px;
+        text-align: center;
+
+        @media (max-width: $mobileMaxWidth) {
+            font-size: 11px;
+        }
+
+        @media (max-width: $mobileWidth) {
+            line-height: 1.5;
+        }
+    }
+
+    .formSection__title {
+        margin-top: 45px;
+        font-size: 32px;
+        max-width: 450px;
+        text-align: center;
+        line-height: 1.4;
+
+        @media (max-width: $mobileMaxWidth) {
+            margin-top: 16px;
+            font-size: 21px;
+            max-width: 320px;
+        }
+    }
+
+    .formSection__form {
+        display: flex;
+        gap: 15px;
+        margin: 38px 0 74px;
+
+        @media (max-width: $desktopWidth) {
+            flex-direction: column;
+            align-items: stretch;
+            margin: 26px 0 52px;
+
+        }
+
+        @media (max-width: $mobileMaxWidth) {
+            width: 100%;
+        }
+    }
+
+    .form__inputSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: auto;
+        border-radius: 7px;
+        min-height: 81px;
+
+        @media (max-width: $desktopWidth) {
+            min-height: 0;
+            width: 100%;
+        }
+
+        .inputSection__inputWithIco {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            align-items: center;
+
+            .inputWithIco__input {
+                padding: 14px 40px 14px 21px;
+                border-radius: 7px;
+                border: 3px solid $white;
+                color: $primaryTextColor;
+                font-size: 15px;
+                min-width: 300px;
+
+                @media (max-width: $desktopWidth) {
+                    padding: 12px 40px 12px 21px;
+                    font-size: 14px;
+                }
+
+                @media (max-width: $mobileMaxWidth) {
+                    min-width: 0;
+                    width: 100%;
+                }
+            }
+
+            .inputWithIco__input:focus {
+                outline: 2px solid $primaryTextColor;
+            }
+
+            .inputWithIco__ico {
+                position: absolute;
+                right: 15px;
+            }
+        }
+
+        .inputSection__errorText {
+            color: $white;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            padding: 6px 12px 8px;
+            font-style: italic;
+        }
+    }
+
+    .form__inputSection--error {
+        background-color: $activeColor;
+
+        .inputWithIco__input {
+            border-color: $activeColor !important;
+        }
+    }
+
+    .form__button {
+        height: calc(100% + 20px);
+    }
+}

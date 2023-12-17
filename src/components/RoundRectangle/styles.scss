@@ -1,0 +1,28 @@
+@import "../../theme";
+
+.rectangle {
+    display: block;
+    position: absolute;
+    background-color: $primaryBackgroundColor;
+    width: 38%;
+    left: 0;
+    border-radius: 0 178px 178px 0;
+    z-index: -1;
+    height: 350px;
+
+    @media (max-width: $desktopWidth) {
+        width: 50%;
+        height: 280px;
+    }
+
+    @media (max-width: $mobileMaxWidth) {
+        width: 70%;
+        height: 180px;
+    }
+}
+
+.rectangle--right {
+    border-radius: 178px 0 0 178px;
+    left: auto;
+    right: 0;
+}
