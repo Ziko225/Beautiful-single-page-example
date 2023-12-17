@@ -13,9 +13,11 @@ const useForm = () => {
             return setNumber(0);
         }
 
-        setTimeout(() => {
+        const timeout = setTimeout(() => {
             setNumber(number - 875);
         }, 500);
+
+        return () => clearTimeout(timeout);
     }, [number]);
 
     const submitHandler = (event) => {
