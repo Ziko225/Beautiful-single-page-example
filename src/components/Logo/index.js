@@ -1,13 +1,13 @@
 import { ReactComponent as LogoIco } from "./logo.svg";
 import "./styles.scss";
 
-const Logo = ({ darkBackground, className }) => {
-    const themeClassName = darkBackground
-        ? "logo--dark"
-        : "logo--white";
+const Logo = ({ darkBackground, className, isHamburgerBar }) => {
+    const themeClassName = isHamburgerBar
+        ? "hamburgerBar" : ""
+        || (darkBackground ? "logo--dark" : "logo--white");
 
     return (
-        <LogoIco className={`${className} ${themeClassName}`} />
+        <LogoIco className={`logo ${className} ${themeClassName}`} />
     );
 };
 

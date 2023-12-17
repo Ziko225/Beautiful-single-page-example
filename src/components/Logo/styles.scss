@@ -1,13 +1,31 @@
 @import "../../theme";
 
+.logo {
+    .logotext {
+        color: $primaryTextColor;
+    }
+
+    .logoCircle {
+        color: $primaryBackgroundColor;
+    }
+
+    color: $white;
+}
+
 .logo--dark {
     .logotext {
         color: $white;
     }
 }
 
-.logo--white {
+.hamburgerBar {
     .logotext {
-        color: $primaryTextColor;
+        color: $white;
     }
+
+    .logoCircle {
+        color: $white;
+    }
+
+    color: $primaryTextColor;
 }

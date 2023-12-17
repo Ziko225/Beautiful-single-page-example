@@ -25,21 +25,21 @@ const Features = () => {
                 <button
                     value={1}
                     onClick={clickHandler}
-                    className={`buttonContainer__button ${activeClass(1)}`}
+                    className={`navigation__button ${activeClass(1)}`}
                 >
                     Simple Bookmarking
                 </button>
                 <button
                     value={2}
                     onClick={clickHandler}
-                    className={`buttonContainer__button ${activeClass(2)}`}
+                    className={`navigation__button ${activeClass(2)}`}
                 >
                     Speedy Searching
                 </button>
                 <button
                     value={3}
                     onClick={clickHandler}
-                    className={`buttonContainer__button ${activeClass(3)}`}
+                    className={`navigation__button ${activeClass(3)}`}
                 >
                     Easy Sharing
                 </button>
