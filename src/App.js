@@ -4,13 +4,13 @@ import Footer from "./features/Footer";
 import Header from "./features/Header";
 import Navigation from "./features/Navigation";
 import Questions from "./features/Questions";
-import "./styles.scss";
 import { useToggle } from "./hooks/useToggle";
 import { useEffect } from "react";
 import PopUp from "./features/PopUp";
+import "./styles.scss";
 
 function App() {
-    const [isPopUpOpen, toggleIsPopUpOpen, setIsPopUpOpen] = useToggle(true);
+    const [isPopUpOpen, toggleIsPopUpOpen, setIsPopUpOpen] = useToggle(false);
 
     useEffect(() => {
         const timout = setTimeout(() => {

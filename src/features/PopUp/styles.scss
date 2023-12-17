@@ -1,17 +1,35 @@
 @import "../../theme";
 
 .popup {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1050px;
     position: fixed;
     z-index: 4;
     box-shadow: $lightShadow;
     background-color: white;
     border-radius: 8px;
     opacity: 95%;
-    top: 200px;
+    top: 10vh;
     right: 0;
     left: 0;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 15px;
+
+    .popup__button {
+        padding: 5px 10px;
+        margin: 5px 5px 5px auto;
+        background-color: $primaryBackgroundColor;
+        border: none;
+        color: $white;
+        border-radius: 5px;
+        filter: brightness(95%);
+        transition: 100ms;
+    }
+
+    .popup__button:hover {
+        filter: brightness(110%);
+    }
 }
