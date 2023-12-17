@@ -2,14 +2,16 @@ import { ReactComponent as Twitter } from "./twitter.svg";
 import { ReactComponent as Facebook } from "./facebook.svg";
 import "./styles.scss";
 
-const Social = () => {
+const Social = ({ className, hamburgerBar }) => {
+    const withoutMediaQueriesClassName = hamburgerBar ? "" : "link__ico";
+
     return (
-        <div className="social">
+        <div className={`social ${className}`}>
             <a className="social__link" href="/">
-                <Facebook className="link__ico" />
+                <Facebook className={withoutMediaQueriesClassName} />
             </a>
             <a className="social__link" href="/">
-                <Twitter className="link__ico" />
+                <Twitter className={withoutMediaQueriesClassName} />
             </a>
         </div>
     );

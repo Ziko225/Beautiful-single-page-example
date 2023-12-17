@@ -1,5 +1,7 @@
 @import "../../theme";
 
+$line: 1px solid #eee4;
+
 .topSection {
     display: flex;
     align-items: center;
@@ -70,6 +72,7 @@
     z-index: 3;
     padding: 34px 30px;
     width: calc(100% - 60px);
+    min-width: calc(100% - 60px);
 
     .topSection__logoContainer {
         color: $white;
@@ -78,6 +81,7 @@
     }
 
     .topSection__hamburgerButton {
+        display: block;
         grid-column: 2;
     }
 
@@ -96,18 +100,26 @@
             width: 100%;
             text-align: center;
             font-size: 16px;
-            border-top: 1px solid #eee4;
+            border-top: $line
         }
 
-        .navigation__link:nth-last-child(2) {
-            border-bottom: 1px solid #eee3;
+        .navigation__link:nth-last-child(3) {
+            border-bottom: $line
         }
 
         .navigation__link--primary {
-            margin-top: 20px;
+            margin-top: 25px;
             background: none;
-            border: 2px solid $white;
+            border: 2px solid $white !important;
             padding: 15px 0;
+        }
+
+        .navigation__link--primary:hover {
+            color: $white;
+        }
+
+        .navigation__social {
+            margin-top: calc(100vh - 460px);
         }
     }
 }

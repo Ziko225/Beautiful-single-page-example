@@ -3,6 +3,7 @@ import { ReactComponent as CloseIco } from "./xMark.svg";
 import { useState } from "react";
 import Logo from "../../components/Logo";
 import Link from "../../components/Link";
+import Social from "../../components/Social";
 import "./styles.scss";
 
 const Navigation = () => {
@@ -33,9 +34,10 @@ const Navigation = () => {
                     >
                         LOGIN
                     </Link>
+                    {isHamburgerBarOpen && <Social hamburgerBar className="navigation__social" />}
                 </nav>
             </div>
-            {isHamburgerBarOpen && <div className="marginTop"/>}
+            {isHamburgerBarOpen && <div className="marginTop" />}
         </>
     );
 };
