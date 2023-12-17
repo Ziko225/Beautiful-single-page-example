@@ -1,0 +1,23 @@
+@import "../../theme";
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    .social__link {
+        color: $white;
+
+        .link__ico{
+            @media (max-width: $mobileMaxWidth) {
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+
+    .social__link:hover {
+        color: $activeColor
+    }
+    
+}

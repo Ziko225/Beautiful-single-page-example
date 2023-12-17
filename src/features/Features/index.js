@@ -7,7 +7,7 @@ const Features = () => {
     const [page, setPage] = useState(1);
 
     const activeClass = (currentPage) => {
-        return (page === currentPage) ? "active" : "";
+        return page === currentPage ? "active" : "";
     };
 
     const clickHandler = (event) => {
@@ -22,33 +22,27 @@ const Features = () => {
                 so you can access them on the go.
             </InformationBlock>
             <div className="features__navigation">
-                <div className="navigation__buttonContainer">
-                    <button
-                        value={1}
-                        onClick={clickHandler}
-                        className={`buttonContainer__button ${activeClass(1)}`}
-                    >
-                        Simple Bookmarking
-                    </button>
-                </div>
-                <div className="navigation__buttonContainer">
-                    <button
-                        value={2}
-                        onClick={clickHandler}
-                        className={`buttonContainer__button ${activeClass(2)}`}
-                    >
-                        Speedy Searching
-                    </button>
-                </div>
-                <div className="navigation__buttonContainer">
-                    <button
-                        value={3}
-                        onClick={clickHandler}
-                        className={`buttonContainer__button ${activeClass(3)}`}
-                    >
-                        Easy Sharing
-                    </button>
-                </div>
+                <button
+                    value={1}
+                    onClick={clickHandler}
+                    className={`buttonContainer__button ${activeClass(1)}`}
+                >
+                    Simple Bookmarking
+                </button>
+                <button
+                    value={2}
+                    onClick={clickHandler}
+                    className={`buttonContainer__button ${activeClass(2)}`}
+                >
+                    Speedy Searching
+                </button>
+                <button
+                    value={3}
+                    onClick={clickHandler}
+                    className={`buttonContainer__button ${activeClass(3)}`}
+                >
+                    Easy Sharing
+                </button>
             </div>
             <Content page={page} />
         </section>

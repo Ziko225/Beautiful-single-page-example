@@ -23,45 +23,65 @@
         @media (max-width: $mobileMaxWidth) {
             flex-direction: column;
             align-items: center;
+            border-bottom: none;
             width: 100%;
             margin-bottom: 60px;
         }
+    }
+}
 
-        .navigation__buttonContainer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+.buttonContainer__button {
+    padding: 26px 42px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid $white;
+    color: $secondaryTextColor;
 
-            @media (max-width: $mobileMaxWidth) {
-                border-top: 1px solid $secondaryTextColor;
-                width: 100%;
-            }
+    @media (max-width: $mobileMaxWidth) {
+        width: 100%;
+        border-bottom: 1px solid $secondaryTextColor !important;
+    }
+}
 
-            .buttonContainer__button {
-                padding: 26px 42px;
-                background: none;
-                border: none;
-                border-bottom: 3px solid $white;
-                color: $secondaryTextColor;
+@media (max-width: $mobileMaxWidth) {
+    .buttonContainer__button:nth-child(1) {
+        border-top: 1px solid $secondaryTextColor;
+    }
+}
 
-                @media (max-width: $mobileMaxWidth) {
-                    padding: 20px 0;
-                    align-self: center;
-                }
-            }
+.active {
+    color: $primaryTextColor;
+    border-bottom: 4px solid $activeColor;
+    margin-bottom: -1px;
+    z-index: 2;
+    position: relative;
+    min-width: min-content;
 
-            .active {
-                color: $primaryTextColor;
-                border-bottom: 4px solid $activeColor;
-                margin-bottom: -1px;
-                z-index: 2;
+    @media (max-width: $mobileMaxWidth) {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
 
-                @media (max-width: $mobileMaxWidth) {
-                    padding: 20px 0;
-                    align-self: center;
-                }
-            }
-        }
+@media (max-width: $mobileMaxWidth) {
+    .active::before {
+        content: "";
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 1px;
+        width: 35%;
+        border-bottom: 4px solid $activeColor;
+    }
 
+    .active:nth-child(1)::before {
+        width: 40%;
+    }
+
+    .active:nth-child(3)::before {
+        width: 25%;
     }
 }

@@ -7,7 +7,7 @@
         margin-top: 105px;
     }
 
-    @mixin margin0ifMobile {
+    @mixin linksMarginForMobile {
         @media (max-width: $mobileMaxWidth) {
             margin: 0 0 30px;
         }
@@ -28,29 +28,21 @@
             }
 
             .navigation__logo {
-                margin-right: auto;
+                margin-right: 62px;
 
-                @include margin0ifMobile;
+                @include linksMarginForMobile;
             }
 
             .navigation__link {
-                margin-right: 20px;
+                margin-right: 44px;
 
-                @include margin0ifMobile;
+                @include linksMarginForMobile;
             }
 
-            .navigation__social {
-                display: flex;
-                align-items: center;
-                gap: 35px;
+            .navigation__link:nth-last-child(2) {
+                margin-right: auto;
 
-                .social__link {
-                    color: $white
-                }
-
-                .social__link:hover {
-                    color: $activeColor
-                }
+                @include linksMarginForMobile;
             }
         }
     }
