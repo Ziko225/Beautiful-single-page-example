@@ -5,9 +5,9 @@ import Form from "./Form";
 
 import "./styles.scss";
 
-const Footer = () => {
+const Footer = ({ isBlur }) => {
     return (
-        <footer className="footer">
+        <footer className={`footer ${isBlur ? "blur" : ""}`}>
             <Form />
             <div className="footer__container">
                 <nav className="container__navigation">

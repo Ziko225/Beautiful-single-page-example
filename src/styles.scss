@@ -21,3 +21,14 @@
         padding: 0 20px;
     }
 }
+
+.blur {
+    filter: blur(8px);
+}
+
+.hoverTop {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0
+}

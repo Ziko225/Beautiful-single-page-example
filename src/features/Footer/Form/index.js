@@ -4,14 +4,14 @@ import "./styles.scss";
 import useForm from "./useForm";
 
 const Form = () => {
-    const { submitHandler, inputHandler, isError, number } = useForm();
+    const { submitHandler, inputHandler, isError, numberWithDot } = useForm();
 
     const errorClassName = isError ? "form__inputSection--error" : "";
 
     return (
         <section className="formSection">
             <h3 className="formSection__subTitle">
-                {`${number}+ ALREADY JOINED`}
+                {`${numberWithDot}+ ALREADY JOINED`}
             </h3>
             <h2 className="formSection__title">
                 Stay up-to-date with what we're doing
@@ -20,7 +20,6 @@ const Form = () => {
                 <div className={`form__inputSection ${errorClassName}`}>
                     <div className="inputSection__inputWithIco">
                         <input
-                            required
                             className="inputWithIco__input"
                             onChange={inputHandler}
                             type="email"

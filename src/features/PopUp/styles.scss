@@ -1,0 +1,17 @@
+@import "../../theme";
+
+.popup {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    z-index: 4;
+    box-shadow: $lightShadow;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 95%;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}

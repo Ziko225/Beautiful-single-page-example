@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 
 const useForm = () => {
     const [isError, setIsError] = useState(false);
@@ -7,15 +8,37 @@ const useForm = () => {
 
     const [number, setNumber] = useState(35000);
 
-    const submitHandler = () => {
+    useEffect(() => {
+        if (number <= 0) {
+            return setNumber(0);
+        }
 
+        setTimeout(() => {
+            setNumber(number - 875);
+        }, 500);
+    }, [number]);
+
+    const submitHandler = (event) => {
+        event.preventDefault();
+
+        setIsError(false);
+
+        const pattern = new RegExp(/^[\w-\\.]+@([\w-]+\.)+[\w-]{2,5}$/g);
+
+        if (pattern.test(email)) {
+            return alert("ok");
+        }
+
+        setIsError(true);
     };
 
     const inputHandler = (event) => {
         setEmail(event.target.value);
     };
 
-    return { submitHandler, inputHandler, isError, number };
+    const numberWithDot = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+    return { submitHandler, inputHandler, isError, numberWithDot };
 };
 
 export default useForm;

@@ -6,7 +6,7 @@ import { ReactComponent as IllustrationSearch } from "./illustrationSearch.svg";
 import { ReactComponent as IllustrationShare } from "./illustrationShare.svg";
 import "./styles.scss";
 
-const Content = ({ page }) => {
+const Content = ({ page = 1 }) => {
 
     const data = {
         1: {
