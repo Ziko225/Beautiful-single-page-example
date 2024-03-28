@@ -1,3 +1,6 @@
+# Single page example
+![image](https://github.com/Ziko225/Beautiful-single-page-example/assets/103639958/28da6259-4355-423e-b81c-7881a547e739)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
