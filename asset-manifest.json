@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/confilogi-task/static/css/main.1748fb68.css",
-    "main.js": "/confilogi-task/static/js/main.20c8d816.js",
+    "main.js": "/confilogi-task/static/js/main.ddcecf13.js",
     "static/js/787.ee23acd9.chunk.js": "/confilogi-task/static/js/787.ee23acd9.chunk.js",
     "static/media/illustrationShare.svg": "/confilogi-task/static/media/illustrationShare.9bb540f061ef337cdf88c3e49d9d0840.svg",
     "static/media/illustrationSearch.svg": "/confilogi-task/static/media/illustrationSearch.9daa0205e2e29a91703f59a909b68463.svg",
@@ -20,11 +20,11 @@
     "static/media/hamburger.svg": "/confilogi-task/static/media/hamburger.8a38534c39fa0f87cf8564f7a83ceda7.svg",
     "static/media/arrow.svg": "/confilogi-task/static/media/arrow.e545e2228c912367af524ffee368648e.svg",
     "main.1748fb68.css.map": "/confilogi-task/static/css/main.1748fb68.css.map",
-    "main.20c8d816.js.map": "/confilogi-task/static/js/main.20c8d816.js.map",
+    "main.ddcecf13.js.map": "/confilogi-task/static/js/main.ddcecf13.js.map",
     "787.ee23acd9.chunk.js.map": "/confilogi-task/static/js/787.ee23acd9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1748fb68.css",
-    "static/js/main.20c8d816.js"
+    "static/js/main.ddcecf13.js"
   ]
 }
